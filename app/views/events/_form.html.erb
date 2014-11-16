@@ -1,0 +1,16 @@
+<div id="event-form-wrapper" class="text-left">
+  <%= bootstrap_form_for(event, layout: :horizontal) do |f| %>
+    <%= f.text_field :name %>
+    <%= f.date_field :date %>
+    <%= f.time_field :time %>
+    <%= f.text_field :artists %>
+    <%= f.text_field :location %>
+    <%= f.text_area :description %>
+    <%= f.url_field :event_link %>
+    <%= f.url_field :ticket_link %>
+    <%= f.text_field :price %>
+    <%= f.text_field :age_limit %>
+
+    <%= f.primary "Submit", class: "pull-center" %>
+  <% end %>
+</div>

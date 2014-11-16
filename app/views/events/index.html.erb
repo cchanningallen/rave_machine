@@ -1,0 +1,51 @@
+<div id="events-wrapper">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <h2>Upcoming Events</h2>
+    </div>
+
+    <div class="col-sm-2">
+      <%= link_to "Refresh Events", poll_events_path, class: "btn btn-inverse" %>
+    </div>
+  </div>
+
+  <table id="event-list" class="table table-condensed text-left">
+    <tr>
+      <th class="col-sm-2">Date</th>
+      <th class="col-sm-3">Event Name</th>
+      <th class="col-sm-2">Artists</th>
+      <th class="col-sm-2">Location</th>
+      <th class="col-sm-2"></th>
+      <th class="col-sm-1"></th>
+    </tr>
+    <% events.each do |event| %>
+      <tr>
+        <td class="event-date">
+          <%= event.date %>
+        </td>
+
+        <td class="event-name">
+          <strong><%= event.name %></strong>
+        </td>
+
+        <td class="event-artists">
+          <small><%= event.artists.join(", ") %></small>
+        </td>
+
+        <td class="event-location">
+          <%= event.location %>
+        </td>
+
+        <td class="event-links">
+          <a href="<%= event.event_link %>">Event Details</a><br>
+          <a href="<%= event.ticket_link %>">Buy Tickets</a>
+        </td>
+
+        <td class="event-actions">
+          <%= link_to 'kill', event,  method: :delete, data: { confirm: 'Are you sure?' } %><br>
+          <%= link_to 'edit', edit_event_path(event)  %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+</div>

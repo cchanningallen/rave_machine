@@ -1,0 +1,84 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require rails_bootstrap_forms
+ *= require_tree .
+ */
+$app_width: 70%;
+$light_blue: #a8d8ff;
+$medium_blue: #6090d8;
+
+$brand-primary: $medium_blue;
+$navbar-inverse-brand-color: $light_blue;
+$navbar-inverse-bg: rgba(0, 0, 24, 0.8);
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html {
+  background: url(rave_1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  background-color: rgba(0,0,0,0);
+}
+
+.navbar {
+  min-height: 40px;
+
+  .navbar-brand {
+    padding: 10px;
+    height: 40px;
+  }
+
+  li {
+    a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+#app-content {
+  width: $app_width;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background: rgba(0, 0, 24, 0.7);
+  color: white;
+}
+
+#app-messages {
+  margin: 70px auto 0;
+}
+
+.app-message {
+  width: $app_width;
+  margin: 0 auto 10px;
+  border: 2px solid $light_blue;
+  border-radius: 5px;
+  background: rgba(0, 0, 24, 0.7);;
+  color: $light_blue;
+}
+
+.alert-info .close {
+  color: $light_blue;
+  opacity: 1.0;
+
+  &:hover {
+    color: lighten($light_blue, 10%);
+  }
+}
