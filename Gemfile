@@ -32,7 +32,22 @@ gem 'nokogiri'
 # Only the prettiest of printing will suffice
 gem 'awesome_print'
 
+# Dat auth doe.
+gem 'devise'
+
 group :development, :test do
+  gem 'dotenv-rails'
+end
+
+group :development do
+  # "These gems make development easier:" ... sweet!
+  # ... from https://github.com/RailsApps/rails-devise-roles/
+  gem 'better_errors' # – helps when things go wrong
+  gem 'quiet_assets'  # – suppresses distracting messages in the log
+  gem 'rails_layout'  # – generates files for an application layout
+end
+
+group :test do
   gem 'rspec-rails', '~> 3.0.0'
   gem 'webmock'
 end

@@ -4,7 +4,7 @@ module TenFifteenFolsom
 
     protected
 
-    def site_root_url
+    def event_list_url
       SITE_ROOT_URL
     end
 

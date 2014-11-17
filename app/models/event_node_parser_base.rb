@@ -25,4 +25,13 @@ class EventNodeParserBase
       age_limit: age_limit
     }
   end
+
+  def get_price_for_common_seller_sites
+    case
+    when ticket_link =~ /www\.eventbrite\.com/
+      Eventbrite::PageParser.new(url: ticket_link).price
+    else
+      yield
+    end
+  end
 end

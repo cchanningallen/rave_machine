@@ -1,9 +1,11 @@
+require 'open-uri'
+
 class EventScraperBase
   include TemplateClassErrors
 
   attr_accessor :doc
 
-  register_template_methods :get_events, :parser, :site_root_url
+  register_template_methods :get_events, :parser, :event_list_url
 
   def self.get_data
     self.new.parsed_data
@@ -17,14 +19,14 @@ class EventScraperBase
     end
   end
 
-  protected
+  # protected
 
   def go_to_site
     @doc = Nokogiri::HTML(open_site)
   end
 
   def open_site
-    open(site_root_url)
+    open(event_list_url)
   end
 end
 

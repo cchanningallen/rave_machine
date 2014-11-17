@@ -1,0 +1,243 @@
+<form name="mgform" onsubmit="return validateform();" action="https://www.eventbrite.com/orderstart?ebtv=C" method="post" target="_top" style="margin: 0px;">
+
+        <div style="display:none"><input type="hidden" name="csrfmiddlewaretoken" value="c381Ny4QZU80NJo9iRAnJ1cNojTFDq35"></div>
+        <input type="hidden" name="eid" value="14146306985">
+        <input type="hidden" name="eventpassword" value="">
+        <input type="hidden" name="affiliate" value="">
+        <input type="hidden" name="referral_code" value="">
+        <input type="hidden" name="referrer" value="">
+        <input type="hidden" name="invite" value="">
+        <input type="hidden" id="ticketCurrency" value="$">
+        <input type="hidden" name="has_javascript" value="1">
+        <input type="hidden" name="_nomo" value="">
+        <input type="hidden" name="source_id" value="0dde5f756de011e4aeb322000b300ca0">
+        <input type="hidden" name="w" value="">
+
+            <input type="hidden" name="payment_type" value="paypal">
+            <script type="text/javascript">
+                document.mgform.has_javascript.value = '1';
+            </script>
+
+            <div class="l-block-stack">
+                <div class="panel_head2 l-block-3" id="ticketInfo">
+                    <h3>Ticket Information</h3>
+
+
+                </div>
+            </div>
+
+
+
+
+<div id="TicketReg" class="panel_body">
+
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="ticket_table" id="ticket_table">
+        <tbody><tr class="ticket_table_head">
+                <td width="40%" nowrap="nowrap">
+        Ticket Type
+</td>
+
+
+    <td>Sales End</td>
+
+<td>
+    Price
+</td>
+
+<td>Fee</td>
+
+
+
+<td width="70" align="right">Quantity</td>
+
+        </tr>
+
+
+
+
+
+        <tr class="ticket_row">
+
+    <td class="ticket_type_name">
+        General.
+
+    </td>
+
+
+
+
+        <td nowrap="nowrap">
+            Nov 23, 2014
+        </td>
+
+
+    <td nowrap="nowrap" class="price_td">
+        <input type="hidden" name="cost_30635379_None" value="15.00">
+
+       $15.00
+
+    </td>
+
+
+    <td nowrap="nowrap" class="fee_td">
+
+        $1.37
+
+    </td>
+
+
+
+
+    <td align="right" nowrap="nowrap">
+
+
+    <select class="ticket_table_select" name="quant_30635379_None" id="quant_30635379_None" onchange="updateCheckout();">
+            <option value="0">0</option>
+
+
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+
+    </select>
+
+
+
+
+    </td>
+
+        </tr>
+
+
+
+        <tr class="ticket_row">
+
+    <td class="ticket_type_name">
+        Early.
+
+    </td>
+
+
+
+
+        <td nowrap="nowrap">
+            Nov 23, 2014
+        </td>
+
+
+    <td nowrap="nowrap" class="price_td">
+        <input type="hidden" name="cost_30635381_None" value="10.00">
+
+       $10.00
+
+    </td>
+
+
+    <td nowrap="nowrap" class="fee_td">
+
+        $1.24
+
+    </td>
+
+
+
+
+    <td align="right" nowrap="nowrap">
+
+
+    <select class="ticket_table_select" name="quant_30635381_None" id="quant_30635381_None" onchange="updateCheckout();">
+            <option value="0">0</option>
+
+
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+
+    </select>
+
+
+
+
+    </td>
+
+        </tr>
+
+
+    </tbody></table>
+
+
+
+
+    <div id="discounts">
+        <div id="discountDiv1" style="">
+            <a href="javascript: Hide('discountDiv1'); Show('discountDiv');">Enter promotional code</a>
+        </div>
+        <div id="discountDiv" style="white-space: nowrap; display: none;">
+            If you have a promotional code, enter it here:
+            <input type="text" class="discount_smartling_css" name="discount" id="discount_code" value="">&nbsp;&nbsp;
+            <span class="button_css">
+                <a href="javascript: applyDiscount('None');" title="Apply">Apply</a>
+            </span>
+            <br clear="all">
+        </div>
+    </div>
+
+
+
+</div><!-- end panel_body -->
+
+<div id="OrderReg" class="panel_footer" style="text-align: right; padding: 10px;">
+
+        <table id="freeButton" align="right" style="display: none;">
+            <tbody><tr>
+                <td>&nbsp;</td>
+                <td>
+                    <span id="primary_cta" class="button_css">
+                        <a href="javascript: freeCheckout();" class="js-checkout-button" style="text-decoration:none;color:#FFFFFF;">Register</a>
+                    </span>
+                </td>
+            </tr>
+        </tbody></table>
+        <div id="paidButton" style="display: block;">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tbody><tr>
+                    <td align="right">
+
+
+
+
+
+    <a href="javascript: paypalCheckout();"><img src="http://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" border="0" align="right" alt="PayPal"></a>
+
+    <a href="javascript: paypalCheckout();"><img src="https://ebmedia.eventbrite.com/s3-s3/static/images/logo/credit_cards_2013-trans.png" align="right" hspace="15" style="border: 0px" title="PayPal accepts Visa, MasterCard, American Express, Discover, eCheck, and PayPal." alt="PayPal"></a>
+
+    <br clear="all">
+    <small>You will be taken to PayPal's secure checkout to complete the purchase.</small><br>
+    <small>By checking out with PayPal, I confirm that I agree with the Eventbrite <a href="/tos/" target="_blank">terms of service</a>, <a href="/privacypolicy/">privacy policy</a>, and <a href="/cookies/" target="_blank">cookie policy</a>.</small>
+    <small></small>
+
+
+
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>    <!-- end paidButton -->
+    <div class="clearfloat"></div>
+</div><!-- OrderReg end panel_footer -->
+
+
+    </form>

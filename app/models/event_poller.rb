@@ -1,5 +1,8 @@
 class EventPoller
-  SCRAPERS = [TenFifteenFolsom::EventScraper]
+  SCRAPERS = [
+    TenFifteenFolsom::EventScraper,
+    Audio::EventScraper,
+  ]
 
   def self.poll_sources_and_create_events
     SCRAPERS.each do |scraper|

@@ -21,6 +21,7 @@
     <% events.each do |event| %>
       <tr>
         <td class="event-date">
+          <%= event.date.strftime("%A") %><br>
           <%= event.date %>
         </td>
 

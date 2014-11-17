@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-  expose(:events) { Event.order('date ASC') }
+  expose(:events) { Event.where('date >= ?', Date.today).order('date ASC') }
   expose(:event, attributes: :event_params)
 
   def create
