@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.3'
+gem 'rails', '4.2.4'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
@@ -9,6 +9,7 @@ gem 'pg'
 # Use Bootstrap & SCSS for stylesheets
 gem 'bootstrap-sass'
 gem 'sass-rails', '~> 4.0.0'
+gem 'compass-rails'
 gem 'autoprefixer-rails'
 gem 'bootstrap_form'
 
